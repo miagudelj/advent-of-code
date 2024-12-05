@@ -60,7 +60,7 @@ public class ListComparator {
    */
   private List<Long> readFile(String fileName) {
     try {
-      Path filePath = Path.of("advent-of-code/src/eventOfCode2024/dayOne/" + fileName);
+      Path filePath = Path.of("src/eventOfCode2024/dayOne/" + fileName);
       String[] splitedStringValues = Files.readString(filePath).split(",");
       return convertToLongs(splitedStringValues);
     } catch (IOException e) {
