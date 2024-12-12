@@ -7,7 +7,7 @@ import java.util.List;
 public class SimilarityCalculatorService {
 
   /**
-   * Calculates sum of distances of List
+   * Calculates sum of similarities of List
    * @param list1
    * @param list2
    * @return
@@ -19,11 +19,11 @@ public class SimilarityCalculatorService {
   }
 
   /**
-   * Sorts lists in ascending order and calculates the distance between the value from both lists with the same index.
+   * Calculates how often the numer of list1 is present in list2
    *
    * @param list1
    * @param list2
-   * @return List of distances between the numbers at the same index between the two files.
+   * @return List of occurrence of numbers from list1 in list2.
    */
   private static List<Long> calculateSimilarity(List<Long> list1, List<Long> list2) {
     List<Long> similarities = new ArrayList<>();
